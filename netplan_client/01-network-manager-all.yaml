@@ -1,0 +1,15 @@
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp2s0:
+      dhcp4: true
+
+      routes:
+        - to: default
+          via: 10.20.117.2
+      nameservers:
+        addresses:
+          - 10.20.177.2
+        search: [santiago.lan]
