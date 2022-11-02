@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt upgrade
-sudo apt install vim unzip bind9 bind9utils bind9-doc isc-dhcp
+sudo apt install vim unzip bind9 bind9utils bind9-doc isc-dhcp-server
 cd /etc/
 sudo unzip ~/quick_bind/zips/bind.zip /etc 
 sudo unzip ~/quick_bind/zips/dhcp.zip /etc
